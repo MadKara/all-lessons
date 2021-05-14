@@ -11,8 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var titles: [String] = [ "I am Poor", "I am Rich" ]
-    var images: [UIImage] = [ #imageLiteral(resourceName: "keanuexploit1-1"), #imageLiteral(resourceName: "diamond") ]
+    let tableData = TableData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,16 +36,21 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count
+        return tableData.arrayOfControllers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
-        let title = titles[indexPath.row]
-        let image = images[indexPath.row]
+        let title = tableData.titles[indexPath.row]
+        let image = tableData.images[indexPath.row]
         cell.labelCell?.text = title
         cell.imageCell.image = image
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(tableData.arrayOfControllers[indexPath.row], animated: true)
+    }
+    
 }
