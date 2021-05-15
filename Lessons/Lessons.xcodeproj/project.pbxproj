@@ -20,6 +20,21 @@
 		ECCF7D78264EF78100035CC5 /* IAmPoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF7D76264EF78100035CC5 /* IAmPoorViewController.swift */; };
 		ECCF7D79264EF78100035CC5 /* IAmPoorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCF7D77264EF78100035CC5 /* IAmPoorViewController.xib */; };
 		ECCF7D7C264F0A1700035CC5 /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF7D7B264F0A1700035CC5 /* TableData.swift */; };
+		ECFBA20B26504D2B00C9A756 /* DiceeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA20926504D2B00C9A756 /* DiceeViewController.swift */; };
+		ECFBA20C26504D2B00C9A756 /* DiceeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA20A26504D2B00C9A756 /* DiceeViewController.xib */; };
+		ECFBA212265053F100C9A756 /* Magic8BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA210265053F100C9A756 /* Magic8BallViewController.swift */; };
+		ECFBA213265053F100C9A756 /* Magic8BallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA211265053F100C9A756 /* Magic8BallViewController.xib */; };
+		ECFBA219265057FC00C9A756 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA217265057FC00C9A756 /* CalculatorViewController.swift */; };
+		ECFBA21A265057FC00C9A756 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA218265057FC00C9A756 /* CalculatorViewController.xib */; };
+		ECFBA22126505E3E00C9A756 /* XylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA21F26505E3E00C9A756 /* XylophoneViewController.swift */; };
+		ECFBA22226505E3E00C9A756 /* XylophoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA22026505E3E00C9A756 /* XylophoneViewController.xib */; };
+		ECFBA22E265061FC00C9A756 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA227265061FC00C9A756 /* A.wav */; };
+		ECFBA22F265061FC00C9A756 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA228265061FC00C9A756 /* C.wav */; };
+		ECFBA230265061FC00C9A756 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA229265061FC00C9A756 /* B.wav */; };
+		ECFBA231265061FC00C9A756 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA22A265061FC00C9A756 /* F.wav */; };
+		ECFBA232265061FC00C9A756 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA22B265061FC00C9A756 /* G.wav */; };
+		ECFBA233265061FC00C9A756 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA22C265061FC00C9A756 /* E.wav */; };
+		ECFBA234265061FC00C9A756 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA22D265061FC00C9A756 /* D.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +53,21 @@
 		ECCF7D76264EF78100035CC5 /* IAmPoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmPoorViewController.swift; sourceTree = "<group>"; };
 		ECCF7D77264EF78100035CC5 /* IAmPoorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IAmPoorViewController.xib; sourceTree = "<group>"; };
 		ECCF7D7B264F0A1700035CC5 /* TableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
+		ECFBA20926504D2B00C9A756 /* DiceeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceeViewController.swift; sourceTree = "<group>"; };
+		ECFBA20A26504D2B00C9A756 /* DiceeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiceeViewController.xib; sourceTree = "<group>"; };
+		ECFBA210265053F100C9A756 /* Magic8BallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallViewController.swift; sourceTree = "<group>"; };
+		ECFBA211265053F100C9A756 /* Magic8BallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Magic8BallViewController.xib; sourceTree = "<group>"; };
+		ECFBA217265057FC00C9A756 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		ECFBA218265057FC00C9A756 /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		ECFBA21F26505E3E00C9A756 /* XylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophoneViewController.swift; sourceTree = "<group>"; };
+		ECFBA22026505E3E00C9A756 /* XylophoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XylophoneViewController.xib; sourceTree = "<group>"; };
+		ECFBA227265061FC00C9A756 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		ECFBA228265061FC00C9A756 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		ECFBA229265061FC00C9A756 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		ECFBA22A265061FC00C9A756 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		ECFBA22B265061FC00C9A756 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		ECFBA22C265061FC00C9A756 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		ECFBA22D265061FC00C9A756 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +108,11 @@
 				EC7CD200264D6B6100C56D15 /* Main.storyboard */,
 				ECBADD16264DBB0F00AE6251 /* Lesson-1 */,
 				ECCF7D74264EF70400035CC5 /* Lesson-2 */,
+				ECFBA20726504C2F00C9A756 /* Lesson-3 */,
+				ECFBA20E2650530D00C9A756 /* Lesson-4 */,
+				ECFBA216265057B700C9A756 /* Lesson-5 */,
+				ECFBA21D26505DAD00C9A756 /* Lesson-6 */,
+				ECFBA2372650646000C9A756 /* Lesson-7 */,
 				EC7CD203264D6B6200C56D15 /* Assets.xcassets */,
 				EC7CD205264D6B6200C56D15 /* LaunchScreen.storyboard */,
 				EC7CD208264D6B6200C56D15 /* Info.plist */,
@@ -110,6 +145,64 @@
 				ECCF7D77264EF78100035CC5 /* IAmPoorViewController.xib */,
 			);
 			path = "Lesson-2";
+			sourceTree = "<group>";
+		};
+		ECFBA20726504C2F00C9A756 /* Lesson-3 */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBA20926504D2B00C9A756 /* DiceeViewController.swift */,
+				ECFBA20A26504D2B00C9A756 /* DiceeViewController.xib */,
+			);
+			path = "Lesson-3";
+			sourceTree = "<group>";
+		};
+		ECFBA20E2650530D00C9A756 /* Lesson-4 */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBA210265053F100C9A756 /* Magic8BallViewController.swift */,
+				ECFBA211265053F100C9A756 /* Magic8BallViewController.xib */,
+			);
+			path = "Lesson-4";
+			sourceTree = "<group>";
+		};
+		ECFBA216265057B700C9A756 /* Lesson-5 */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBA217265057FC00C9A756 /* CalculatorViewController.swift */,
+				ECFBA218265057FC00C9A756 /* CalculatorViewController.xib */,
+			);
+			path = "Lesson-5";
+			sourceTree = "<group>";
+		};
+		ECFBA21D26505DAD00C9A756 /* Lesson-6 */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBA226265061FC00C9A756 /* Sounds */,
+				ECFBA21F26505E3E00C9A756 /* XylophoneViewController.swift */,
+				ECFBA22026505E3E00C9A756 /* XylophoneViewController.xib */,
+			);
+			path = "Lesson-6";
+			sourceTree = "<group>";
+		};
+		ECFBA226265061FC00C9A756 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBA227265061FC00C9A756 /* A.wav */,
+				ECFBA228265061FC00C9A756 /* C.wav */,
+				ECFBA229265061FC00C9A756 /* B.wav */,
+				ECFBA22A265061FC00C9A756 /* F.wav */,
+				ECFBA22B265061FC00C9A756 /* G.wav */,
+				ECFBA22C265061FC00C9A756 /* E.wav */,
+				ECFBA22D265061FC00C9A756 /* D.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		ECFBA2372650646000C9A756 /* Lesson-7 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Lesson-7";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,12 +262,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFBA22F265061FC00C9A756 /* C.wav in Resources */,
+				ECFBA231265061FC00C9A756 /* F.wav in Resources */,
+				ECFBA22E265061FC00C9A756 /* A.wav in Resources */,
+				ECFBA234265061FC00C9A756 /* D.wav in Resources */,
+				ECFBA213265053F100C9A756 /* Magic8BallViewController.xib in Resources */,
+				ECFBA21A265057FC00C9A756 /* CalculatorViewController.xib in Resources */,
 				EC7CD207264D6B6200C56D15 /* LaunchScreen.storyboard in Resources */,
+				ECFBA233265061FC00C9A756 /* E.wav in Resources */,
+				ECFBA232265061FC00C9A756 /* G.wav in Resources */,
 				EC7CD204264D6B6200C56D15 /* Assets.xcassets in Resources */,
 				ECBADD12264D894B00AE6251 /* CustomTableViewCell.xib in Resources */,
 				EC7CD202264D6B6100C56D15 /* Main.storyboard in Resources */,
+				ECFBA20C26504D2B00C9A756 /* DiceeViewController.xib in Resources */,
 				ECCF7D79264EF78100035CC5 /* IAmPoorViewController.xib in Resources */,
 				ECCF7D72264EE59700035CC5 /* IAmRichViewController.xib in Resources */,
+				ECFBA230265061FC00C9A756 /* B.wav in Resources */,
+				ECFBA22226505E3E00C9A756 /* XylophoneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,12 +289,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFBA219265057FC00C9A756 /* CalculatorViewController.swift in Sources */,
 				EC7CD1FF264D6B6100C56D15 /* ViewController.swift in Sources */,
 				ECCF7D71264EE59700035CC5 /* IAmRichViewController.swift in Sources */,
 				ECCF7D78264EF78100035CC5 /* IAmPoorViewController.swift in Sources */,
 				EC7CD1FB264D6B6100C56D15 /* AppDelegate.swift in Sources */,
 				ECCF7D7C264F0A1700035CC5 /* TableData.swift in Sources */,
+				ECFBA212265053F100C9A756 /* Magic8BallViewController.swift in Sources */,
+				ECFBA20B26504D2B00C9A756 /* DiceeViewController.swift in Sources */,
 				ECBADD11264D894B00AE6251 /* CustomTableViewCell.swift in Sources */,
+				ECFBA22126505E3E00C9A756 /* XylophoneViewController.swift in Sources */,
 				EC7CD1FD264D6B6100C56D15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
