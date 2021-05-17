@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0CC3B1265116D200D26065 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0CC3B0265116D200D26065 /* Storyboard.storyboard */; };
+		EC0CC3B52651171500D26065 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3B32651171500D26065 /* ResultViewController.swift */; };
+		EC0CC3B62651171500D26065 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3B42651171500D26065 /* CalculateViewController.swift */; };
+		EC0CC3BA2651172C00D26065 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3B82651172C00D26065 /* BMI.swift */; };
+		EC0CC3BB2651172C00D26065 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3B92651172C00D26065 /* CalculatorBrain.swift */; };
+		EC0CC3C72651323200D26065 /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3C52651323200D26065 /* EggTimerViewController.swift */; };
+		EC0CC3C82651323200D26065 /* EggTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0CC3C62651323200D26065 /* EggTimerViewController.xib */; };
+		EC0CC3CB2651331E00D26065 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC0CC3CA2651331E00D26065 /* alarm_sound.mp3 */; };
+		EC0CC3D32651374E00D26065 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3D12651374E00D26065 /* QuizBrain.swift */; };
+		EC0CC3D42651374E00D26065 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3D22651374E00D26065 /* Question.swift */; };
+		EC0CC3DF265139BC00D26065 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3DD265139BC00D26065 /* QuizViewController.swift */; };
+		EC0CC3E0265139BC00D26065 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0CC3DE265139BC00D26065 /* QuizViewController.xib */; };
+		EC0CC3E726513BC200D26065 /* MultipleQuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3E526513BC200D26065 /* MultipleQuizBrain.swift */; };
+		EC0CC3E826513BC200D26065 /* MultipleQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3E626513BC200D26065 /* MultipleQuestion.swift */; };
+		EC0CC3EC26513BE900D26065 /* MultipleQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CC3EA26513BE900D26065 /* MultipleQuizViewController.swift */; };
+		EC0CC3ED26513BE900D26065 /* MultipleQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0CC3EB26513BE900D26065 /* MultipleQuizViewController.xib */; };
+		EC597BD126529F4500256345 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC597BCF26529F4500256345 /* WeatherViewController.swift */; };
+		EC597BD226529F4500256345 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC597BD026529F4500256345 /* WeatherViewController.xib */; };
+		EC597BD926529FB900256345 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC597BD626529FB800256345 /* WeatherData.swift */; };
+		EC597BDA26529FB900256345 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC597BD726529FB800256345 /* WeatherModel.swift */; };
+		EC597BDB26529FB900256345 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC597BD826529FB800256345 /* WeatherManager.swift */; };
+		EC72637B2651B23800677DC0 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7263792651B23800677DC0 /* StoryBrain.swift */; };
+		EC72637C2651B23800677DC0 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72637A2651B23800677DC0 /* Story.swift */; };
+		EC7263802651B27300677DC0 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72637E2651B27200677DC0 /* StoryViewController.swift */; };
+		EC7263812651B27300677DC0 /* StoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC72637F2651B27200677DC0 /* StoryViewController.xib */; };
+		EC7263882651B51500677DC0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7263862651B51500677DC0 /* ResultsViewController.swift */; };
+		EC7263892651B51500677DC0 /* TipsyCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7263872651B51500677DC0 /* TipsyCalculatorViewController.swift */; };
+		EC72638C2651B53800677DC0 /* Tipsy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC72638B2651B53800677DC0 /* Tipsy.storyboard */; };
 		EC7CD1FB264D6B6100C56D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7CD1FA264D6B6100C56D15 /* AppDelegate.swift */; };
 		EC7CD1FD264D6B6100C56D15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7CD1FC264D6B6100C56D15 /* SceneDelegate.swift */; };
 		EC7CD1FF264D6B6100C56D15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7CD1FE264D6B6100C56D15 /* ViewController.swift */; };
@@ -38,6 +66,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC0CC3B0265116D200D26065 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EC0CC3B32651171500D26065 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		EC0CC3B42651171500D26065 /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		EC0CC3B82651172C00D26065 /* BMI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		EC0CC3B92651172C00D26065 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		EC0CC3C52651323200D26065 /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
+		EC0CC3C62651323200D26065 /* EggTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggTimerViewController.xib; sourceTree = "<group>"; };
+		EC0CC3CA2651331E00D26065 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		EC0CC3D12651374E00D26065 /* QuizBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		EC0CC3D22651374E00D26065 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EC0CC3DD265139BC00D26065 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		EC0CC3DE265139BC00D26065 /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		EC0CC3E526513BC200D26065 /* MultipleQuizBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleQuizBrain.swift; sourceTree = "<group>"; };
+		EC0CC3E626513BC200D26065 /* MultipleQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleQuestion.swift; sourceTree = "<group>"; };
+		EC0CC3EA26513BE900D26065 /* MultipleQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleQuizViewController.swift; sourceTree = "<group>"; };
+		EC0CC3EB26513BE900D26065 /* MultipleQuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleQuizViewController.xib; sourceTree = "<group>"; };
+		EC597BCF26529F4500256345 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		EC597BD026529F4500256345 /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
+		EC597BD626529FB800256345 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		EC597BD726529FB800256345 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		EC597BD826529FB800256345 /* WeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		EC7263792651B23800677DC0 /* StoryBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		EC72637A2651B23800677DC0 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		EC72637E2651B27200677DC0 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		EC72637F2651B27200677DC0 /* StoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryViewController.xib; sourceTree = "<group>"; };
+		EC7263862651B51500677DC0 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		EC7263872651B51500677DC0 /* TipsyCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsyCalculatorViewController.swift; sourceTree = "<group>"; };
+		EC72638B2651B53800677DC0 /* Tipsy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tipsy.storyboard; sourceTree = "<group>"; };
 		EC7CD1F7264D6B6100C56D15 /* Lessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7CD1FA264D6B6100C56D15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7CD1FC264D6B6100C56D15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +137,233 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0CC3BE26511E0200D26065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3B82651172C00D26065 /* BMI.swift */,
+				EC0CC3B92651172C00D26065 /* CalculatorBrain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC0CC3C026511E2900D26065 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3B42651171500D26065 /* CalculateViewController.swift */,
+				EC0CC3B32651171500D26065 /* ResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC0CC3C126511E3500D26065 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3B0265116D200D26065 /* Storyboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC0CC3C326511EE200D26065 /* Lesson-8 */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3C52651323200D26065 /* EggTimerViewController.swift */,
+				EC0CC3C62651323200D26065 /* EggTimerViewController.xib */,
+				EC0CC3CA2651331E00D26065 /* alarm_sound.mp3 */,
+			);
+			path = "Lesson-8";
+			sourceTree = "<group>";
+		};
+		EC0CC3CE265136D600D26065 /* Lesson-9.1 */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3D02651374E00D26065 /* Model */,
+				EC597BE92652ABB400256345 /* View */,
+				EC597BE72652ABA600256345 /* Controller */,
+			);
+			path = "Lesson-9.1";
+			sourceTree = "<group>";
+		};
+		EC0CC3D02651374E00D26065 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3D12651374E00D26065 /* QuizBrain.swift */,
+				EC0CC3D22651374E00D26065 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC0CC3E226513B8900D26065 /* Lesson-9.2 */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3E426513BC200D26065 /* Model */,
+				EC597BE62652AB9200256345 /* View */,
+				EC597BE52652AB8500256345 /* Controller */,
+			);
+			path = "Lesson-9.2";
+			sourceTree = "<group>";
+		};
+		EC0CC3E426513BC200D26065 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3E526513BC200D26065 /* MultipleQuizBrain.swift */,
+				EC0CC3E626513BC200D26065 /* MultipleQuestion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC597BCE26529ED700256345 /* Lesson-13 */ = {
+			isa = PBXGroup;
+			children = (
+				EC597BD526529FB800256345 /* Model */,
+				EC597BDF2652AA2800256345 /* View */,
+				EC597BE02652AA2E00256345 /* Controller */,
+			);
+			path = "Lesson-13";
+			sourceTree = "<group>";
+		};
+		EC597BD526529FB800256345 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC597BD626529FB800256345 /* WeatherData.swift */,
+				EC597BD726529FB800256345 /* WeatherModel.swift */,
+				EC597BD826529FB800256345 /* WeatherManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC597BDF2652AA2800256345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC597BD026529F4500256345 /* WeatherViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC597BE02652AA2E00256345 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC597BCF26529F4500256345 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC597BE12652AA5A00256345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC72638B2651B53800677DC0 /* Tipsy.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC597BE22652AA8500256345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC72637F2651B27200677DC0 /* StoryViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC597BE32652AA8D00256345 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC72637E2651B27200677DC0 /* StoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC597BE52652AB8500256345 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3EA26513BE900D26065 /* MultipleQuizViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC597BE62652AB9200256345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3EB26513BE900D26065 /* MultipleQuizViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC597BE72652ABA600256345 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3DD265139BC00D26065 /* QuizViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC597BE92652ABB400256345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC0CC3DE265139BC00D26065 /* QuizViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC597BEA2652ABFD00256345 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECCF7D7B264F0A1700035CC5 /* TableData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC597BEB2652AC0500256345 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC7CD1FE264D6B6100C56D15 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC597BED2652AC1200256345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC7CD200264D6B6100C56D15 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC7263762651B15F00677DC0 /* Lesson-10 */ = {
+			isa = PBXGroup;
+			children = (
+				EC7263782651B23800677DC0 /* Model */,
+				EC597BE22652AA8500256345 /* View */,
+				EC597BE32652AA8D00256345 /* Controller */,
+			);
+			path = "Lesson-10";
+			sourceTree = "<group>";
+		};
+		EC7263782651B23800677DC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC7263792651B23800677DC0 /* StoryBrain.swift */,
+				EC72637A2651B23800677DC0 /* Story.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC7263832651B48500677DC0 /* Lesson-12 */ = {
+			isa = PBXGroup;
+			children = (
+				EC597BE12652AA5A00256345 /* View */,
+				EC7263852651B51500677DC0 /* Controllers */,
+			);
+			path = "Lesson-12";
+			sourceTree = "<group>";
+		};
+		EC7263852651B51500677DC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC7263862651B51500677DC0 /* ResultsViewController.swift */,
+				EC7263872651B51500677DC0 /* TipsyCalculatorViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		EC7CD1EE264D6B6100C56D15 = {
 			isa = PBXGroup;
 			children = (
@@ -103,16 +386,22 @@
 				EC7CD1FA264D6B6100C56D15 /* AppDelegate.swift */,
 				EC7CD1FC264D6B6100C56D15 /* SceneDelegate.swift */,
 				ECBADD14264DAC9E00AE6251 /* Cells */,
-				ECCF7D7B264F0A1700035CC5 /* TableData.swift */,
-				EC7CD1FE264D6B6100C56D15 /* ViewController.swift */,
-				EC7CD200264D6B6100C56D15 /* Main.storyboard */,
-				ECBADD16264DBB0F00AE6251 /* Lesson-1 */,
-				ECCF7D74264EF70400035CC5 /* Lesson-2 */,
-				ECFBA20726504C2F00C9A756 /* Lesson-3 */,
-				ECFBA20E2650530D00C9A756 /* Lesson-4 */,
-				ECFBA216265057B700C9A756 /* Lesson-5 */,
-				ECFBA21D26505DAD00C9A756 /* Lesson-6 */,
-				ECFBA2372650646000C9A756 /* Lesson-7 */,
+				EC597BEA2652ABFD00256345 /* Model */,
+				EC597BEB2652AC0500256345 /* Controller */,
+				EC597BED2652AC1200256345 /* View */,
+				ECBADD16264DBB0F00AE6251 /* Lesson-2 */,
+				ECCF7D74264EF70400035CC5 /* Lesson-3 */,
+				ECFBA20726504C2F00C9A756 /* Lesson-4 */,
+				ECFBA20E2650530D00C9A756 /* Lesson-5 */,
+				ECFBA216265057B700C9A756 /* Lesson-6 */,
+				ECFBA21D26505DAD00C9A756 /* Lesson-7 */,
+				EC0CC3C326511EE200D26065 /* Lesson-8 */,
+				EC0CC3CE265136D600D26065 /* Lesson-9.1 */,
+				EC0CC3E226513B8900D26065 /* Lesson-9.2 */,
+				EC7263762651B15F00677DC0 /* Lesson-10 */,
+				ECFBA2372650646000C9A756 /* Lesson-11 */,
+				EC7263832651B48500677DC0 /* Lesson-12 */,
+				EC597BCE26529ED700256345 /* Lesson-13 */,
 				EC7CD203264D6B6200C56D15 /* Assets.xcassets */,
 				EC7CD205264D6B6200C56D15 /* LaunchScreen.storyboard */,
 				EC7CD208264D6B6200C56D15 /* Info.plist */,
@@ -129,59 +418,59 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		ECBADD16264DBB0F00AE6251 /* Lesson-1 */ = {
+		ECBADD16264DBB0F00AE6251 /* Lesson-2 */ = {
 			isa = PBXGroup;
 			children = (
 				ECCF7D6F264EE59700035CC5 /* IAmRichViewController.swift */,
 				ECCF7D70264EE59700035CC5 /* IAmRichViewController.xib */,
 			);
-			path = "Lesson-1";
+			path = "Lesson-2";
 			sourceTree = "<group>";
 		};
-		ECCF7D74264EF70400035CC5 /* Lesson-2 */ = {
+		ECCF7D74264EF70400035CC5 /* Lesson-3 */ = {
 			isa = PBXGroup;
 			children = (
 				ECCF7D76264EF78100035CC5 /* IAmPoorViewController.swift */,
 				ECCF7D77264EF78100035CC5 /* IAmPoorViewController.xib */,
 			);
-			path = "Lesson-2";
+			path = "Lesson-3";
 			sourceTree = "<group>";
 		};
-		ECFBA20726504C2F00C9A756 /* Lesson-3 */ = {
+		ECFBA20726504C2F00C9A756 /* Lesson-4 */ = {
 			isa = PBXGroup;
 			children = (
 				ECFBA20926504D2B00C9A756 /* DiceeViewController.swift */,
 				ECFBA20A26504D2B00C9A756 /* DiceeViewController.xib */,
 			);
-			path = "Lesson-3";
+			path = "Lesson-4";
 			sourceTree = "<group>";
 		};
-		ECFBA20E2650530D00C9A756 /* Lesson-4 */ = {
+		ECFBA20E2650530D00C9A756 /* Lesson-5 */ = {
 			isa = PBXGroup;
 			children = (
 				ECFBA210265053F100C9A756 /* Magic8BallViewController.swift */,
 				ECFBA211265053F100C9A756 /* Magic8BallViewController.xib */,
 			);
-			path = "Lesson-4";
+			path = "Lesson-5";
 			sourceTree = "<group>";
 		};
-		ECFBA216265057B700C9A756 /* Lesson-5 */ = {
+		ECFBA216265057B700C9A756 /* Lesson-6 */ = {
 			isa = PBXGroup;
 			children = (
 				ECFBA217265057FC00C9A756 /* CalculatorViewController.swift */,
 				ECFBA218265057FC00C9A756 /* CalculatorViewController.xib */,
 			);
-			path = "Lesson-5";
+			path = "Lesson-6";
 			sourceTree = "<group>";
 		};
-		ECFBA21D26505DAD00C9A756 /* Lesson-6 */ = {
+		ECFBA21D26505DAD00C9A756 /* Lesson-7 */ = {
 			isa = PBXGroup;
 			children = (
 				ECFBA226265061FC00C9A756 /* Sounds */,
 				ECFBA21F26505E3E00C9A756 /* XylophoneViewController.swift */,
 				ECFBA22026505E3E00C9A756 /* XylophoneViewController.xib */,
 			);
-			path = "Lesson-6";
+			path = "Lesson-7";
 			sourceTree = "<group>";
 		};
 		ECFBA226265061FC00C9A756 /* Sounds */ = {
@@ -198,11 +487,14 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		ECFBA2372650646000C9A756 /* Lesson-7 */ = {
+		ECFBA2372650646000C9A756 /* Lesson-11 */ = {
 			isa = PBXGroup;
 			children = (
+				EC0CC3BE26511E0200D26065 /* Models */,
+				EC0CC3C126511E3500D26065 /* Views */,
+				EC0CC3C026511E2900D26065 /* Controllers */,
 			);
-			path = "Lesson-7";
+			path = "Lesson-11";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,14 +554,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC72638C2651B53800677DC0 /* Tipsy.storyboard in Resources */,
+				EC0CC3C82651323200D26065 /* EggTimerViewController.xib in Resources */,
+				EC0CC3ED26513BE900D26065 /* MultipleQuizViewController.xib in Resources */,
 				ECFBA22F265061FC00C9A756 /* C.wav in Resources */,
 				ECFBA231265061FC00C9A756 /* F.wav in Resources */,
+				EC597BD226529F4500256345 /* WeatherViewController.xib in Resources */,
 				ECFBA22E265061FC00C9A756 /* A.wav in Resources */,
+				EC0CC3B1265116D200D26065 /* Storyboard.storyboard in Resources */,
 				ECFBA234265061FC00C9A756 /* D.wav in Resources */,
+				EC0CC3CB2651331E00D26065 /* alarm_sound.mp3 in Resources */,
 				ECFBA213265053F100C9A756 /* Magic8BallViewController.xib in Resources */,
 				ECFBA21A265057FC00C9A756 /* CalculatorViewController.xib in Resources */,
 				EC7CD207264D6B6200C56D15 /* LaunchScreen.storyboard in Resources */,
 				ECFBA233265061FC00C9A756 /* E.wav in Resources */,
+				EC0CC3E0265139BC00D26065 /* QuizViewController.xib in Resources */,
 				ECFBA232265061FC00C9A756 /* G.wav in Resources */,
 				EC7CD204264D6B6200C56D15 /* Assets.xcassets in Resources */,
 				ECBADD12264D894B00AE6251 /* CustomTableViewCell.xib in Resources */,
@@ -278,6 +577,7 @@
 				ECCF7D79264EF78100035CC5 /* IAmPoorViewController.xib in Resources */,
 				ECCF7D72264EE59700035CC5 /* IAmRichViewController.xib in Resources */,
 				ECFBA230265061FC00C9A756 /* B.wav in Resources */,
+				EC7263812651B27300677DC0 /* StoryViewController.xib in Resources */,
 				ECFBA22226505E3E00C9A756 /* XylophoneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,17 +589,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0CC3B52651171500D26065 /* ResultViewController.swift in Sources */,
 				ECFBA219265057FC00C9A756 /* CalculatorViewController.swift in Sources */,
 				EC7CD1FF264D6B6100C56D15 /* ViewController.swift in Sources */,
+				EC0CC3D42651374E00D26065 /* Question.swift in Sources */,
+				EC597BDB26529FB900256345 /* WeatherManager.swift in Sources */,
+				EC597BDA26529FB900256345 /* WeatherModel.swift in Sources */,
 				ECCF7D71264EE59700035CC5 /* IAmRichViewController.swift in Sources */,
+				EC7263802651B27300677DC0 /* StoryViewController.swift in Sources */,
 				ECCF7D78264EF78100035CC5 /* IAmPoorViewController.swift in Sources */,
+				EC0CC3BB2651172C00D26065 /* CalculatorBrain.swift in Sources */,
 				EC7CD1FB264D6B6100C56D15 /* AppDelegate.swift in Sources */,
+				EC0CC3EC26513BE900D26065 /* MultipleQuizViewController.swift in Sources */,
+				EC0CC3DF265139BC00D26065 /* QuizViewController.swift in Sources */,
+				EC0CC3D32651374E00D26065 /* QuizBrain.swift in Sources */,
+				EC0CC3B62651171500D26065 /* CalculateViewController.swift in Sources */,
 				ECCF7D7C264F0A1700035CC5 /* TableData.swift in Sources */,
+				EC0CC3E826513BC200D26065 /* MultipleQuestion.swift in Sources */,
 				ECFBA212265053F100C9A756 /* Magic8BallViewController.swift in Sources */,
+				EC0CC3C72651323200D26065 /* EggTimerViewController.swift in Sources */,
+				EC0CC3BA2651172C00D26065 /* BMI.swift in Sources */,
+				EC0CC3E726513BC200D26065 /* MultipleQuizBrain.swift in Sources */,
+				EC597BD926529FB900256345 /* WeatherData.swift in Sources */,
 				ECFBA20B26504D2B00C9A756 /* DiceeViewController.swift in Sources */,
 				ECBADD11264D894B00AE6251 /* CustomTableViewCell.swift in Sources */,
+				EC72637B2651B23800677DC0 /* StoryBrain.swift in Sources */,
 				ECFBA22126505E3E00C9A756 /* XylophoneViewController.swift in Sources */,
+				EC7263882651B51500677DC0 /* ResultsViewController.swift in Sources */,
 				EC7CD1FD264D6B6100C56D15 /* SceneDelegate.swift in Sources */,
+				EC597BD126529F4500256345 /* WeatherViewController.swift in Sources */,
+				EC7263892651B51500677DC0 /* TipsyCalculatorViewController.swift in Sources */,
+				EC72637C2651B23800677DC0 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
