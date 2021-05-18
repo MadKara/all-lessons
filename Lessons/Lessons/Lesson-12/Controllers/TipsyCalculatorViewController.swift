@@ -18,7 +18,7 @@ class TipsyCalculatorViewController: UIViewController, ControllerHeader {
     
     @IBOutlet weak var splitNumberLabel: UILabel!
     
-    var titleProject: String = "Tipsy"
+    var titleProject: String = "Tipsy"  //
     var imageProject: UIImage = #imageLiteral(resourceName: "tip")
     
     var tip = 0.1
