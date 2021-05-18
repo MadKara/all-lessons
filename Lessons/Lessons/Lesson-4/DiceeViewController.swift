@@ -29,4 +29,5 @@ class DiceeViewController: UIViewController, ControllerHeader {
         diceImageView2.image = diceArray.randomElement()
         
     }
+
 }

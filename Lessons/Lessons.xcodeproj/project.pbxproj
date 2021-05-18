@@ -309,7 +309,6 @@
 			isa = PBXGroup;
 			children = (
 				ECCF7D7B264F0A1700035CC5 /* TableData.swift */,
-				EC7FD63326542E7100F1413C /* ControllerHeader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -388,6 +387,7 @@
 			children = (
 				EC7CD1FA264D6B6100C56D15 /* AppDelegate.swift */,
 				EC7CD1FC264D6B6100C56D15 /* SceneDelegate.swift */,
+				EC7FD63326542E7100F1413C /* ControllerHeader.swift */,
 				ECBADD14264DAC9E00AE6251 /* Cells */,
 				EC597BEA2652ABFD00256345 /* Model */,
 				EC597BEB2652AC0500256345 /* Controller */,
