@@ -7,7 +7,10 @@
 
 import UIKit
 
-class IAmRichViewController: UIViewController {
+class IAmRichViewController: UIViewController, ControllerHeader {
+    
+    var titleProject: String = "I Am Rich"
+    var imageProject: UIImage = #imageLiteral(resourceName: "diamond")
 
     static let identifier = "IAmRichViewController"
     
@@ -18,18 +21,5 @@ class IAmRichViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

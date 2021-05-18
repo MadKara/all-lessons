@@ -7,12 +7,14 @@
 
 import UIKit
 
-class StoryViewController: UIViewController {
+class StoryViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
+    var titleProject: String = "Destini"
+    var imageProject: UIImage = #imageLiteral(resourceName: "story")
     
     var storyBrain = StoryBrain()
     

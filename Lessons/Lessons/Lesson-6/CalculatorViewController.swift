@@ -7,12 +7,15 @@
 
 import UIKit
 
-class CalculatorViewController: UIViewController {
+class CalculatorViewController: UIViewController, ControllerHeader {
 
     static let identifier = "CalculatorViewController"
     
     static var nib: UINib {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
+    
+    var titleProject: String = "Calculator"
+    var imageProject: UIImage = #imageLiteral(resourceName: "calc")
 
 }

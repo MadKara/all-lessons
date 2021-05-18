@@ -43,16 +43,21 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
-        let title = tableData.titles[indexPath.row]
-        let image = tableData.images[indexPath.row]
-        cell.labelCell?.text = title
-        cell.imageCell.image = image
+//        let title = tableData.titles[indexPath.row]
+//        let image = tableData.images[indexPath.row]
+//        cell.labelCell?.text = title
+//        cell.imageCell.image = image
+        
+        let controller = tableData.arrayOfControllers[indexPath.row]
+        
+        cell.configure(with: controller.titleProject, image: controller.imageProject)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(tableData.arrayOfControllers[indexPath.row], animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(tableData.arrayOfControllers[indexPath.row] as! UIViewController, animated: true)
     }
     
 }

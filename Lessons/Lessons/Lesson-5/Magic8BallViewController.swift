@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Magic8BallViewController: UIViewController {
+class Magic8BallViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var imageView: UIImageView!
     
@@ -18,6 +18,9 @@ class Magic8BallViewController: UIViewController {
     static var nib: UINib {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
+    
+    var titleProject: String = "Magic 8 Ball"
+    var imageProject: UIImage = #imageLiteral(resourceName: "ball2")
     
     @IBAction func askButtonPressed(_ sender: UIButton) {
         imageView.image = ballArray.randomElement()

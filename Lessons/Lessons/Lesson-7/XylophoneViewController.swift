@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class XylophoneViewController: UIViewController {
+class XylophoneViewController: UIViewController, ControllerHeader {
 
     
     static let identifier = "XylophoneViewController"
@@ -16,6 +16,9 @@ class XylophoneViewController: UIViewController {
     static var nib: UINib {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
+    
+    var titleProject: String = "Xylophone"
+    var imageProject: UIImage = #imageLiteral(resourceName: "xylophone")
 
     var player: AVAudioPlayer!
     

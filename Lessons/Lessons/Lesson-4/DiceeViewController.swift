@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DiceeViewController: UIViewController {
+class DiceeViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
@@ -18,6 +18,8 @@ class DiceeViewController: UIViewController {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
     
+    var titleProject: String = "Dicee"
+    var imageProject: UIImage = #imageLiteral(resourceName: "DiceeLogo")
     
     @IBAction func rollButtinPressed(_ sender: UIButton) {
     
@@ -27,5 +29,4 @@ class DiceeViewController: UIViewController {
         diceImageView2.image = diceArray.randomElement()
         
     }
-
 }

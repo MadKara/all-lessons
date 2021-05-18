@@ -8,12 +8,15 @@
 import UIKit
 import CoreLocation
 
-class WeatherViewController: UIViewController {
+class WeatherViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
+    
+    var titleProject: String = "Clima"
+    var imageProject: UIImage = #imageLiteral(resourceName: "apple-weather")
     
     var weatherManager = WeatherManager()
     var locationManager = CLLocationManager()

@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class EggTimerViewController: UIViewController {
+class EggTimerViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -18,6 +18,9 @@ class EggTimerViewController: UIViewController {
     static var nib: UINib {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
+    
+    var titleProject: String = "Egg Timer"
+    var imageProject: UIImage = #imageLiteral(resourceName: "soft_egg")
     
     var player: AVAudioPlayer!
     

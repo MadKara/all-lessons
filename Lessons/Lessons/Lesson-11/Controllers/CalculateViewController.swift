@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalculateViewController: UIViewController {
+class CalculateViewController: UIViewController, ControllerHeader {
 
     var calculatorBrain = CalculatorBrain()
     
@@ -18,6 +18,9 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightSlider: UISlider!
     
+    
+    var titleProject: String = "BMI"
+    var imageProject: UIImage = #imageLiteral(resourceName: "bmi")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,12 @@ class CalculateViewController: UIViewController {
             destinationVC.advice = calculatorBrain.getAdvice()
             destinationVC.color = calculatorBrain.getColor()
         }
+    }
+    
+    static public func instance() -> CalculateViewController {
+        let storyboard = UIStoryboard(name: "Storyboard", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "CalculateViewController") as! CalculateViewController
+
     }
 }
 

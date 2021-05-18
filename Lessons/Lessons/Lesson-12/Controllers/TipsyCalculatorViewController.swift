@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TipsyCalculatorViewController: UIViewController {
+class TipsyCalculatorViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var billTextField: UITextField!
     
@@ -17,6 +17,9 @@ class TipsyCalculatorViewController: UIViewController {
     @IBOutlet weak var twentyPctButton: UIButton!
     
     @IBOutlet weak var splitNumberLabel: UILabel!
+    
+    var titleProject: String = "Tipsy"
+    var imageProject: UIImage = #imageLiteral(resourceName: "tip")
     
     var tip = 0.1
     var numberOfPeople = 2
@@ -73,6 +76,11 @@ class TipsyCalculatorViewController: UIViewController {
             destinationVC.tipPercentage = tip
             destinationVC.numberOfPeople = numberOfPeople
         }
+    }
+    
+    static public func instance() -> TipsyCalculatorViewController {
+        let storyboard = UIStoryboard(name: "Tipsy", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "TipsyCalculatorViewController") as! TipsyCalculatorViewController
     }
 }
 

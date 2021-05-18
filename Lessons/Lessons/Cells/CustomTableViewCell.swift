@@ -18,6 +18,10 @@ class CustomTableViewCell: UITableViewCell {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
     
+    public func configure(with title: String, image: UIImage) {
+        labelCell.text = title
+        imageCell.image = image
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

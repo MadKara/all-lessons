@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
+class QuizViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -21,6 +21,9 @@ class QuizViewController: UIViewController {
     static var nib: UINib {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
+    
+    var titleProject: String = "Quiz"
+    var imageProject: UIImage = #imageLiteral(resourceName: "question-mark")
     
     var quizBrain = QuizBrain()
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MultipleQuizViewController: UIViewController {
+class MultipleQuizViewController: UIViewController, ControllerHeader {
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -23,6 +23,9 @@ class MultipleQuizViewController: UIViewController {
     static var nib: UINib {
            return UINib(nibName: String(describing: self), bundle: nil)
     }
+    
+    var titleProject: String = "Multiple Quiz"
+    var imageProject: UIImage = #imageLiteral(resourceName: "question-mark")
     
     var quizBrain = MultipleQuizBrain()
     
