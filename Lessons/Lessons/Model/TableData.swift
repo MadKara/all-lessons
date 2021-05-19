@@ -23,6 +23,7 @@ struct TableData {
         StoryViewController(),
         CalculateViewController.instance(),
         TipsyCalculatorViewController.instance(),
-        WeatherViewController()
+        WeatherViewController(),
+        ByteCoinViewController()
     ]
 }

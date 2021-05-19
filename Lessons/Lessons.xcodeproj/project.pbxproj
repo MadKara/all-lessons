@@ -49,6 +49,11 @@
 		ECCF7D78264EF78100035CC5 /* IAmPoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF7D76264EF78100035CC5 /* IAmPoorViewController.swift */; };
 		ECCF7D79264EF78100035CC5 /* IAmPoorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCF7D77264EF78100035CC5 /* IAmPoorViewController.xib */; };
 		ECCF7D7C264F0A1700035CC5 /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF7D7B264F0A1700035CC5 /* TableData.swift */; };
+		ECE3FDCA265561C200E43F03 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3FDC9265561C200E43F03 /* CoinManager.swift */; };
+		ECE3FDCE2655621D00E43F03 /* ByteCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3FDCC2655621D00E43F03 /* ByteCoinViewController.swift */; };
+		ECE3FDCF2655621D00E43F03 /* ByteCoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECE3FDCD2655621D00E43F03 /* ByteCoinViewController.xib */; };
+		ECE3FDD62655755A00E43F03 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3FDD52655755A00E43F03 /* CoinData.swift */; };
+		ECE3FDE0265595EB00E43F03 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3FDDF265595EB00E43F03 /* CoinModel.swift */; };
 		ECFBA20B26504D2B00C9A756 /* DiceeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA20926504D2B00C9A756 /* DiceeViewController.swift */; };
 		ECFBA20C26504D2B00C9A756 /* DiceeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA20A26504D2B00C9A756 /* DiceeViewController.xib */; };
 		ECFBA212265053F100C9A756 /* Magic8BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA210265053F100C9A756 /* Magic8BallViewController.swift */; };
@@ -111,6 +116,11 @@
 		ECCF7D76264EF78100035CC5 /* IAmPoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmPoorViewController.swift; sourceTree = "<group>"; };
 		ECCF7D77264EF78100035CC5 /* IAmPoorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IAmPoorViewController.xib; sourceTree = "<group>"; };
 		ECCF7D7B264F0A1700035CC5 /* TableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
+		ECE3FDC9265561C200E43F03 /* CoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		ECE3FDCC2655621D00E43F03 /* ByteCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteCoinViewController.swift; sourceTree = "<group>"; };
+		ECE3FDCD2655621D00E43F03 /* ByteCoinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ByteCoinViewController.xib; sourceTree = "<group>"; };
+		ECE3FDD52655755A00E43F03 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		ECE3FDDF265595EB00E43F03 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		ECFBA20926504D2B00C9A756 /* DiceeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceeViewController.swift; sourceTree = "<group>"; };
 		ECFBA20A26504D2B00C9A756 /* DiceeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiceeViewController.xib; sourceTree = "<group>"; };
 		ECFBA210265053F100C9A756 /* Magic8BallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallViewController.swift; sourceTree = "<group>"; };
@@ -416,6 +426,9 @@
 		EC7FD63C265440A700F1413C /* Lesson-14 */ = {
 			isa = PBXGroup;
 			children = (
+				ECE3FDC8265561C200E43F03 /* Model */,
+				ECE3FDD1265562B300E43F03 /* View */,
+				ECE3FDD2265562BC00E43F03 /* Controller */,
 			);
 			path = "Lesson-14";
 			sourceTree = "<group>";
@@ -445,6 +458,32 @@
 				ECCF7D77264EF78100035CC5 /* IAmPoorViewController.xib */,
 			);
 			path = "Lesson-3";
+			sourceTree = "<group>";
+		};
+		ECE3FDC8265561C200E43F03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECE3FDD52655755A00E43F03 /* CoinData.swift */,
+				ECE3FDDF265595EB00E43F03 /* CoinModel.swift */,
+				ECE3FDC9265561C200E43F03 /* CoinManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECE3FDD1265562B300E43F03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECE3FDCD2655621D00E43F03 /* ByteCoinViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECE3FDD2265562BC00E43F03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECE3FDCC2655621D00E43F03 /* ByteCoinViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		ECFBA20726504C2F00C9A756 /* Lesson-4 */ = {
@@ -584,6 +623,7 @@
 				EC7CD204264D6B6200C56D15 /* Assets.xcassets in Resources */,
 				ECBADD12264D894B00AE6251 /* CustomTableViewCell.xib in Resources */,
 				EC7CD202264D6B6100C56D15 /* Main.storyboard in Resources */,
+				ECE3FDCF2655621D00E43F03 /* ByteCoinViewController.xib in Resources */,
 				ECFBA20C26504D2B00C9A756 /* DiceeViewController.xib in Resources */,
 				ECCF7D79264EF78100035CC5 /* IAmPoorViewController.xib in Resources */,
 				ECCF7D72264EE59700035CC5 /* IAmRichViewController.xib in Resources */,
@@ -602,10 +642,12 @@
 			files = (
 				EC0CC3B52651171500D26065 /* ResultViewController.swift in Sources */,
 				ECFBA219265057FC00C9A756 /* CalculatorViewController.swift in Sources */,
+				ECE3FDCA265561C200E43F03 /* CoinManager.swift in Sources */,
 				EC7CD1FF264D6B6100C56D15 /* ViewController.swift in Sources */,
 				EC0CC3D42651374E00D26065 /* Question.swift in Sources */,
 				EC597BDB26529FB900256345 /* WeatherManager.swift in Sources */,
 				EC597BDA26529FB900256345 /* WeatherModel.swift in Sources */,
+				ECE3FDD62655755A00E43F03 /* CoinData.swift in Sources */,
 				ECCF7D71264EE59700035CC5 /* IAmRichViewController.swift in Sources */,
 				EC7263802651B27300677DC0 /* StoryViewController.swift in Sources */,
 				ECCF7D78264EF78100035CC5 /* IAmPoorViewController.swift in Sources */,
@@ -614,6 +656,7 @@
 				EC0CC3EC26513BE900D26065 /* MultipleQuizViewController.swift in Sources */,
 				EC0CC3DF265139BC00D26065 /* QuizViewController.swift in Sources */,
 				EC0CC3D32651374E00D26065 /* QuizBrain.swift in Sources */,
+				ECE3FDE0265595EB00E43F03 /* CoinModel.swift in Sources */,
 				EC0CC3B62651171500D26065 /* CalculateViewController.swift in Sources */,
 				ECCF7D7C264F0A1700035CC5 /* TableData.swift in Sources */,
 				EC0CC3E826513BC200D26065 /* MultipleQuestion.swift in Sources */,
@@ -622,6 +665,7 @@
 				EC0CC3C72651323200D26065 /* EggTimerViewController.swift in Sources */,
 				EC0CC3BA2651172C00D26065 /* BMI.swift in Sources */,
 				EC0CC3E726513BC200D26065 /* MultipleQuizBrain.swift in Sources */,
+				ECE3FDCE2655621D00E43F03 /* ByteCoinViewController.swift in Sources */,
 				EC597BD926529FB900256345 /* WeatherData.swift in Sources */,
 				ECFBA20B26504D2B00C9A756 /* DiceeViewController.swift in Sources */,
 				ECBADD11264D894B00AE6251 /* CustomTableViewCell.swift in Sources */,

@@ -43,10 +43,6 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
-//        let title = tableData.titles[indexPath.row]
-//        let image = tableData.images[indexPath.row]
-//        cell.labelCell?.text = title
-//        cell.imageCell.image = image
         
         let controller = tableData.arrayOfControllers[indexPath.row]
         
