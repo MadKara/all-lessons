@@ -42,6 +42,11 @@
 		EC7CD204264D6B6200C56D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7CD203264D6B6200C56D15 /* Assets.xcassets */; };
 		EC7CD207264D6B6200C56D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7CD205264D6B6200C56D15 /* LaunchScreen.storyboard */; };
 		EC7FD63426542E7100F1413C /* ControllerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD63326542E7100F1413C /* ControllerHeader.swift */; };
+		ECA380232656D491004F0E87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3801F2656D491004F0E87 /* ChatViewController.swift */; };
+		ECA380242656D491004F0E87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA380202656D491004F0E87 /* LoginViewController.swift */; };
+		ECA380252656D491004F0E87 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA380212656D491004F0E87 /* RegisterViewController.swift */; };
+		ECA380262656D491004F0E87 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA380222656D491004F0E87 /* WelcomeViewController.swift */; };
+		ECA3802C2656D4F1004F0E87 /* FlashChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3802B2656D4F1004F0E87 /* FlashChat.storyboard */; };
 		ECBADD11264D894B00AE6251 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBADD0F264D894B00AE6251 /* CustomTableViewCell.swift */; };
 		ECBADD12264D894B00AE6251 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECBADD10264D894B00AE6251 /* CustomTableViewCell.xib */; };
 		ECCF7D71264EE59700035CC5 /* IAmRichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF7D6F264EE59700035CC5 /* IAmRichViewController.swift */; };
@@ -109,6 +114,11 @@
 		EC7CD206264D6B6200C56D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7CD208264D6B6200C56D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7FD63326542E7100F1413C /* ControllerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHeader.swift; sourceTree = "<group>"; };
+		ECA3801F2656D491004F0E87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		ECA380202656D491004F0E87 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ECA380212656D491004F0E87 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ECA380222656D491004F0E87 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		ECA3802B2656D4F1004F0E87 /* FlashChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlashChat.storyboard; sourceTree = "<group>"; };
 		ECBADD0F264D894B00AE6251 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		ECBADD10264D894B00AE6251 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		ECCF7D6F264EE59700035CC5 /* IAmRichViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmRichViewController.swift; sourceTree = "<group>"; };
@@ -416,6 +426,7 @@
 				EC7263832651B48500677DC0 /* Lesson-12 */,
 				EC597BCE26529ED700256345 /* Lesson-13 */,
 				EC7FD63C265440A700F1413C /* Lesson-14 */,
+				ECA3801E2656D44B004F0E87 /* Lesson-15 */,
 				EC7CD203264D6B6200C56D15 /* Assets.xcassets */,
 				EC7CD205264D6B6200C56D15 /* LaunchScreen.storyboard */,
 				EC7CD208264D6B6200C56D15 /* Info.plist */,
@@ -431,6 +442,34 @@
 				ECE3FDD2265562BC00E43F03 /* Controller */,
 			);
 			path = "Lesson-14";
+			sourceTree = "<group>";
+		};
+		ECA3801E2656D44B004F0E87 /* Lesson-15 */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3802A2656D4BD004F0E87 /* View */,
+				ECA380282656D4AB004F0E87 /* Controllers */,
+			);
+			path = "Lesson-15";
+			sourceTree = "<group>";
+		};
+		ECA380282656D4AB004F0E87 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECA380222656D491004F0E87 /* WelcomeViewController.swift */,
+				ECA3801F2656D491004F0E87 /* ChatViewController.swift */,
+				ECA380202656D491004F0E87 /* LoginViewController.swift */,
+				ECA380212656D491004F0E87 /* RegisterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECA3802A2656D4BD004F0E87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3802B2656D4F1004F0E87 /* FlashChat.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		ECBADD14264DAC9E00AE6251 /* Cells */ = {
@@ -629,6 +668,7 @@
 				ECCF7D72264EE59700035CC5 /* IAmRichViewController.xib in Resources */,
 				ECFBA230265061FC00C9A756 /* B.wav in Resources */,
 				EC7263812651B27300677DC0 /* StoryViewController.xib in Resources */,
+				ECA3802C2656D4F1004F0E87 /* FlashChat.storyboard in Resources */,
 				ECFBA22226505E3E00C9A756 /* XylophoneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,9 +681,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0CC3B52651171500D26065 /* ResultViewController.swift in Sources */,
+				ECA380262656D491004F0E87 /* WelcomeViewController.swift in Sources */,
 				ECFBA219265057FC00C9A756 /* CalculatorViewController.swift in Sources */,
 				ECE3FDCA265561C200E43F03 /* CoinManager.swift in Sources */,
 				EC7CD1FF264D6B6100C56D15 /* ViewController.swift in Sources */,
+				ECA380242656D491004F0E87 /* LoginViewController.swift in Sources */,
 				EC0CC3D42651374E00D26065 /* Question.swift in Sources */,
 				EC597BDB26529FB900256345 /* WeatherManager.swift in Sources */,
 				EC597BDA26529FB900256345 /* WeatherModel.swift in Sources */,
@@ -673,7 +715,9 @@
 				ECFBA22126505E3E00C9A756 /* XylophoneViewController.swift in Sources */,
 				EC7263882651B51500677DC0 /* ResultsViewController.swift in Sources */,
 				EC7CD1FD264D6B6100C56D15 /* SceneDelegate.swift in Sources */,
+				ECA380232656D491004F0E87 /* ChatViewController.swift in Sources */,
 				EC597BD126529F4500256345 /* WeatherViewController.swift in Sources */,
+				ECA380252656D491004F0E87 /* RegisterViewController.swift in Sources */,
 				EC7263892651B51500677DC0 /* TipsyCalculatorViewController.swift in Sources */,
 				EC72637C2651B23800677DC0 /* Story.swift in Sources */,
 			);

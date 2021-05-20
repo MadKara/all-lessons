@@ -24,6 +24,7 @@ struct TableData {
         CalculateViewController.instance(),
         TipsyCalculatorViewController.instance(),
         WeatherViewController(),
-        ByteCoinViewController()
+        ByteCoinViewController(),
+        WelcomeViewController.instance()
     ]
 }
