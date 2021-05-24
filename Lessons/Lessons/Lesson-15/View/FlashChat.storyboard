@@ -31,7 +31,7 @@
                                     <segue destination="fPZ-fi-iaD" kind="show" id="s1p-8p-3VI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhA-fL-YP8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhA-fL-YP8" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                 <rect key="frame" x="52" y="418" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="d67-Jl-BvH"/>
@@ -342,7 +342,13 @@
                             <constraint firstItem="FEd-Lw-hcj" firstAttribute="leading" secondItem="soD-03-eOk" secondAttribute="leading" id="tF3-ry-PYD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="X77-nC-dqg"/>
+                    <navigationItem key="navigationItem" id="X77-nC-dqg">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="BeO-RN-btz">
+                            <connections>
+                                <action selector="logOutPressed:" destination="UNi-JX-wJl" id="7Ag-dF-PNq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="hEz-vz-Dd3" id="2ze-X7-9tM"/>
                         <outlet property="tableView" destination="FEd-Lw-hcj" id="9oO-Dp-KeZ"/>
@@ -371,6 +377,9 @@
             <point key="canvasLocation" x="-86.956521739130437" y="134.59821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="KhA-fL-YP8"/>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="m9g-bK-gJF"/>
     </inferredMetricsTieBreakers>

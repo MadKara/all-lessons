@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>826080479326-lh2db2ar05q22tf9o7931onrvt6q627h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.826080479326-lh2db2ar05q22tf9o7931onrvt6q627h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB3oEoF3sn8J_wHPwdkPLH7f04_yCtb4jI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>826080479326</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.karalash.Lessons</string>
+	<key>PROJECT_ID</key>
+	<string>flash-chat-51d05</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flash-chat-51d05.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:826080479326:ios:df39c19a81a2db626ecccf</string>
+</dict>
+</plist>
