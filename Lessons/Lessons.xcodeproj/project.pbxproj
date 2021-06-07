@@ -33,6 +33,7 @@
 		EC597BD926529FB900256345 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC597BD626529FB800256345 /* WeatherData.swift */; };
 		EC597BDA26529FB900256345 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC597BD726529FB800256345 /* WeatherModel.swift */; };
 		EC597BDB26529FB900256345 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC597BD826529FB800256345 /* WeatherManager.swift */; };
+		EC67434A266E931500DC3501 /* ChatData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC674348266E931500DC3501 /* ChatData.xcdatamodeld */; };
 		EC72637B2651B23800677DC0 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7263792651B23800677DC0 /* StoryBrain.swift */; };
 		EC72637C2651B23800677DC0 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72637A2651B23800677DC0 /* Story.swift */; };
 		EC7263802651B27300677DC0 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72637E2651B27200677DC0 /* StoryViewController.swift */; };
@@ -112,6 +113,7 @@
 		EC597BD626529FB800256345 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		EC597BD726529FB800256345 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		EC597BD826529FB800256345 /* WeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		EC674349266E931500DC3501 /* ChatData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatData.xcdatamodel; sourceTree = "<group>"; };
 		EC7263792651B23800677DC0 /* StoryBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 		EC72637A2651B23800677DC0 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		EC72637E2651B27200677DC0 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				EC08CA65265C1CEE00A6BF47 /* Message.swift */,
+				EC674348266E931500DC3501 /* ChatData.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -800,6 +803,7 @@
 				EC0CC3EC26513BE900D26065 /* MultipleQuizViewController.swift in Sources */,
 				EC0CC3DF265139BC00D26065 /* QuizViewController.swift in Sources */,
 				EC0CC3D32651374E00D26065 /* QuizBrain.swift in Sources */,
+				EC67434A266E931500DC3501 /* ChatData.xcdatamodeld in Sources */,
 				ECE3FDE0265595EB00E43F03 /* CoinModel.swift in Sources */,
 				EC0CC3B62651171500D26065 /* CalculateViewController.swift in Sources */,
 				ECCF7D7C264F0A1700035CC5 /* TableData.swift in Sources */,
@@ -1044,6 +1048,19 @@
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EC674348266E931500DC3501 /* ChatData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC674349266E931500DC3501 /* ChatData.xcdatamodel */,
+			);
+			currentVersion = EC674349266E931500DC3501 /* ChatData.xcdatamodel */;
+			path = ChatData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EC7CD1EF264D6B6100C56D15 /* Project object */;
 }
