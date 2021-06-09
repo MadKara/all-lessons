@@ -7,27 +7,55 @@
 //
 
 import UIKit
-import Firebase
+import CoreData
 
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     @IBAction func registerPressed(_ sender: UIButton) {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text {
-        
-            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                
-                if let error = error {
-                    print(error)
-                } else {
-                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
-                }
-          
+            if !isValidEmail(email) {
+                let alert = UIAlertController(title: "Invalid email", message: "Try again.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
+            if !isValidPassword(password) {
+                let alert = UIAlertController(title: "Invalid password", message: "Try again.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+            
+            let newUser = User(context: context)
+            newUser.email = email
+            newUser.password = password
+
+            do {
+                try context.save()
+            } catch {
+                print("error")
+            }
+            print(newUser)
+
+            self.performSegue(withIdentifier: K.registerSegue, sender: self)
         }
     }
     
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
+    func isValidPassword(_ pass: String) -> Bool {
+        let passRegEx = "(?=.{6,})"
+
+        let passPred = NSPredicate(format:"SELF MATCHES %@", passRegEx)
+        return passPred.evaluate(with: pass)
+    }
 }
