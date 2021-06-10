@@ -19,29 +19,32 @@ class RegisterViewController: UIViewController {
     @IBAction func registerPressed(_ sender: UIButton) {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text {
-            if !isValidEmail(email) {
+            
+            if isValidEmail(email) {
+                if isValidPassword(password) {
+                    
+                    let newUser = User(context: context)
+                    newUser.email = email
+                    newUser.password = password
+
+                    do {
+                        try context.save()
+                    } catch {
+                        print("error")
+                    }
+                    print(newUser)
+
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                } else {
+                    let alert = UIAlertController(title: "Invalid password", message: "Try again.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            } else {
                 let alert = UIAlertController(title: "Invalid email", message: "Try again.", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
-            if !isValidPassword(password) {
-                let alert = UIAlertController(title: "Invalid password", message: "Try again.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
-            
-            let newUser = User(context: context)
-            newUser.email = email
-            newUser.password = password
-
-            do {
-                try context.save()
-            } catch {
-                print("error")
-            }
-            print(newUser)
-
-            self.performSegue(withIdentifier: K.registerSegue, sender: self)
         }
     }
     
@@ -53,7 +56,7 @@ class RegisterViewController: UIViewController {
     }
     
     func isValidPassword(_ pass: String) -> Bool {
-        let passRegEx = "(?=.{6,})"
+        let passRegEx = ".{6,}"
 
         let passPred = NSPredicate(format:"SELF MATCHES %@", passRegEx)
         return passPred.evaluate(with: pass)
