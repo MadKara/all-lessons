@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C939D650E2FFE8410C21E4A /* Pods_Lessons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19035E4F27FC88DA50AF9F0 /* Pods_Lessons.framework */; };
 		EC08CA63265C1A4D00A6BF47 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08CA62265C1A4D00A6BF47 /* Constants.swift */; };
-		EC08CA66265C1CEE00A6BF47 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08CA65265C1CEE00A6BF47 /* Message.swift */; };
+		EC08CA66265C1CEE00A6BF47 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08CA65265C1CEE00A6BF47 /* ChatMessage.swift */; };
 		EC08CA6C265C2CA500A6BF47 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08CA6A265C2CA500A6BF47 /* MessageCell.swift */; };
 		EC08CA6D265C2CA500A6BF47 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC08CA6B265C2CA500A6BF47 /* MessageCell.xib */; };
 		EC0CC3B1265116D200D26065 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0CC3B0265116D200D26065 /* Storyboard.storyboard */; };
@@ -48,6 +48,7 @@
 		EC7CD204264D6B6200C56D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7CD203264D6B6200C56D15 /* Assets.xcassets */; };
 		EC7CD207264D6B6200C56D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7CD205264D6B6200C56D15 /* LaunchScreen.storyboard */; };
 		EC7FD63426542E7100F1413C /* ControllerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD63326542E7100F1413C /* ControllerHeader.swift */; };
+		EC892A792673C64C0077E945 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC892A782673C64C0077E945 /* UsersViewController.swift */; };
 		EC9EA2DE2667FF5F00036F3E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC9EA2DD2667FF5F00036F3E /* IQKeyboardManagerSwift */; };
 		ECA380232656D491004F0E87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3801F2656D491004F0E87 /* ChatViewController.swift */; };
 		ECA380242656D491004F0E87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA380202656D491004F0E87 /* LoginViewController.swift */; };
@@ -89,7 +90,7 @@
 		C19035E4F27FC88DA50AF9F0 /* Pods_Lessons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lessons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6839EC0D612C6CE4DF177D /* Pods-Lessons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lessons.release.xcconfig"; path = "Target Support Files/Pods-Lessons/Pods-Lessons.release.xcconfig"; sourceTree = "<group>"; };
 		EC08CA62265C1A4D00A6BF47 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		EC08CA65265C1CEE00A6BF47 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EC08CA65265C1CEE00A6BF47 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		EC08CA6A265C2CA500A6BF47 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		EC08CA6B265C2CA500A6BF47 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		EC0CC3B0265116D200D26065 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 		EC7CD206264D6B6200C56D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7CD208264D6B6200C56D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7FD63326542E7100F1413C /* ControllerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHeader.swift; sourceTree = "<group>"; };
+		EC892A782673C64C0077E945 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		ECA3801F2656D491004F0E87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		ECA380202656D491004F0E87 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ECA380212656D491004F0E87 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -198,7 +200,7 @@
 		EC08CA68265C1CF400A6BF47 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EC08CA65265C1CEE00A6BF47 /* Message.swift */,
+				EC08CA65265C1CEE00A6BF47 /* ChatMessage.swift */,
 				EC674348266E931500DC3501 /* ChatData.xcdatamodeld */,
 			);
 			path = Model;
@@ -509,6 +511,7 @@
 				ECA380222656D491004F0E87 /* WelcomeViewController.swift */,
 				ECA380202656D491004F0E87 /* LoginViewController.swift */,
 				ECA380212656D491004F0E87 /* RegisterViewController.swift */,
+				EC892A782673C64C0077E945 /* UsersViewController.swift */,
 				ECA3801F2656D491004F0E87 /* ChatViewController.swift */,
 			);
 			path = Controllers;
@@ -791,6 +794,7 @@
 				ECE3FDCA265561C200E43F03 /* CoinManager.swift in Sources */,
 				EC7CD1FF264D6B6100C56D15 /* ViewController.swift in Sources */,
 				ECA380242656D491004F0E87 /* LoginViewController.swift in Sources */,
+				EC892A792673C64C0077E945 /* UsersViewController.swift in Sources */,
 				EC0CC3D42651374E00D26065 /* Question.swift in Sources */,
 				EC597BDB26529FB900256345 /* WeatherManager.swift in Sources */,
 				EC597BDA26529FB900256345 /* WeatherModel.swift in Sources */,
@@ -813,7 +817,7 @@
 				EC08CA63265C1A4D00A6BF47 /* Constants.swift in Sources */,
 				EC0CC3C72651323200D26065 /* EggTimerViewController.swift in Sources */,
 				EC0CC3BA2651172C00D26065 /* BMI.swift in Sources */,
-				EC08CA66265C1CEE00A6BF47 /* Message.swift in Sources */,
+				EC08CA66265C1CEE00A6BF47 /* ChatMessage.swift in Sources */,
 				EC0CC3E726513BC200D26065 /* MultipleQuizBrain.swift in Sources */,
 				ECE3FDCE2655621D00E43F03 /* ByteCoinViewController.swift in Sources */,
 				EC597BD926529FB900256345 /* WeatherData.swift in Sources */,

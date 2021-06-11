@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import CoreData
 
 class ChatViewController: UIViewController {
     
@@ -15,7 +16,17 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var messageTextfield: UITextField!
     
     let db = Firestore.firestore()
-    var messages: [Message] = []
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var messages: [ChatMessage] = []
+    var messagesCoreData = [Message]()
+    
+    var selectedUser: User? {
+        didSet {
+            //loadChatMessages()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +38,27 @@ class ChatViewController: UIViewController {
         
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         
-        loadMessages()
+        //loadMessages()
     }
     
+//    func loadChatMessages(with request: NSFetchRequest<Message> = Message.fetchRequest()) {
+//
+//        let predicate = NSPredicate(format: "parentUser.email MATCHES %@", selectedUser!.email!)
+//
+//        request.predicate = predicate
+//
+//        do {
+//            messagesCoreData = try context.fetch(request)
+//        } catch {
+//            print("Error fetching messages, \(error)")
+//        }
+//
+//        tableView.reloadData()
+//
+//    }
+    
     func loadMessages() {
-        
+                
         db.collection(K.FStore.collectionName)
             .order(by: K.FStore.dateField)
             .addSnapshotListener { (querySnapshot, error) in
@@ -45,7 +72,7 @@ class ChatViewController: UIViewController {
                     for doc in snapshotDocuments {
                         let data = doc.data()
                         if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
-                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            let newMessage = ChatMessage(sender: messageSender, body: messageBody)
                             self.messages.append(newMessage)
                             
                             DispatchQueue.main.async {

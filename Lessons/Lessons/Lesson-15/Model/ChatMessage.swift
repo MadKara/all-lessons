@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Message {
+struct ChatMessage {
     let sender: String
     let body: String
 }

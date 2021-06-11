@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Message" representedClassName=".Message" syncable="YES" codeGenerationType="class">
+        <attribute name="text" attributeType="String"/>
+        <relationship name="parentUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="messages" inverseEntity="User"/>
+    </entity>
     <entity name="User" representedClassName=".User" syncable="YES" codeGenerationType="class">
         <attribute name="email" attributeType="String"/>
         <attribute name="password" attributeType="String"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="parentUser" inverseEntity="Message"/>
     </entity>
     <elements>
-        <element name="User" positionX="-1482" positionY="-1188" width="128" height="59"/>
+        <element name="Message" positionX="-1485" positionY="-1170" width="128" height="59"/>
+        <element name="User" positionX="-1701" positionY="-1208.5" width="128" height="88"/>
     </elements>
 </model>
