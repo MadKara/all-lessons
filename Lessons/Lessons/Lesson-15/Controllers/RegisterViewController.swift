@@ -61,4 +61,9 @@ class RegisterViewController: UIViewController {
         let passPred = NSPredicate(format:"SELF MATCHES %@", passRegEx)
         return passPred.evaluate(with: pass)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! UsersViewController
+        destinationVC.currentUser = emailTextfield.text!
+    }
 }

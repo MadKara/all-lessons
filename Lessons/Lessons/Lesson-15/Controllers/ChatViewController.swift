@@ -15,18 +15,12 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
-    let db = Firestore.firestore()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var messages: [ChatMessage] = []
     var messagesCoreData = [Message]()
     
-    var selectedUser: User? {
-        didSet {
-            //loadChatMessages()
-        }
-    }
-    
+    var selectedUser: User?
+    var currentUser = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,76 +31,50 @@ class ChatViewController: UIViewController {
         navigationItem.hidesBackButton = true
         
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
-        
-        //loadMessages()
+        loadChatMessages()
     }
     
-//    func loadChatMessages(with request: NSFetchRequest<Message> = Message.fetchRequest()) {
-//
-//        let predicate = NSPredicate(format: "parentUser.email MATCHES %@", selectedUser!.email!)
-//
-//        request.predicate = predicate
-//
-//        do {
-//            messagesCoreData = try context.fetch(request)
-//        } catch {
-//            print("Error fetching messages, \(error)")
-//        }
-//
-//        tableView.reloadData()
-//
-//    }
-    
-    func loadMessages() {
-                
-        db.collection(K.FStore.collectionName)
-            .order(by: K.FStore.dateField)
-            .addSnapshotListener { (querySnapshot, error) in
-            
-            self.messages = []
-            
-            if let err = error {
-                print("There was an issue retrieving data from Firestore, \(err)")
-            } else {
-                if let snapshotDocuments = querySnapshot?.documents {
-                    for doc in snapshotDocuments {
-                        let data = doc.data()
-                        if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
-                            let newMessage = ChatMessage(sender: messageSender, body: messageBody)
-                            self.messages.append(newMessage)
-                            
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
-                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
-                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-                                
-                            }
-                        }
-                    }
-                }
-            }
+    func loadChatMessages() {
+
+        let request: NSFetchRequest<Message> = Message.fetchRequest()
+        let predicate = NSPredicate(format: "ANY parentUser.email == %@", currentUser)
+
+        request.predicate = predicate
+        request.returnsObjectsAsFaults = false
+        do {
+            messagesCoreData = try context.fetch(request)
+        } catch {
+            print("Error fetching messages, \(error)")
         }
+
+        self.tableView.reloadData()
+//        DispatchQueue.main.async {
+//            self.tableView.reloadData()
+//            let indexPath = IndexPath(row: self.messagesCoreData.count - 1, section: 0)
+//            self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+//
+//        }
+    }
+    
+    func saveMessages() {
+        do {
+            try context.save()
+        } catch {
+            print("Error saving messages, \(error)")
+        }
+        tableView.reloadData()
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
         
-        if let messageBody = messageTextfield.text, let messageSender = Auth.auth().currentUser?.email {
-            
-            db.collection(K.FStore.collectionName).addDocument(data: [
-                K.FStore.senderField: messageSender,
-                K.FStore.bodyField: messageBody,
-                K.FStore.dateField: Date().timeIntervalSince1970
-            ]) { (error) in
-                if let err = error {
-                    print("There was an issue saving data to firestore, \(err)")
-                } else {
-                    print("Succesfully saved data.")
-                    DispatchQueue.main.async {
-                        self.messageTextfield.text = ""
-                        
-                    }
-                }
-            }
+        if let messageBody = messageTextfield.text {
+            let newMessage = Message(context: self.context)
+            newMessage.text = messageBody
+            self.messagesCoreData.append(newMessage)
+            self.saveMessages()
+        }
+        DispatchQueue.main.async {
+            self.messageTextfield.text = ""
         }
     }
     
@@ -127,16 +95,17 @@ class ChatViewController: UIViewController {
 extension ChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
+        return messagesCoreData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let message = messages[indexPath.row]
+        let message = messagesCoreData[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
-        let currentUser = message.sender == Auth.auth().currentUser?.email
-        cell.configureCell(with: currentUser, messageText: message.body)
+    
+        let user = message.parentUser == selectedUser   // !!
+        cell.configureCell(with: user, messageText: message.text!)
         
         return cell
     }

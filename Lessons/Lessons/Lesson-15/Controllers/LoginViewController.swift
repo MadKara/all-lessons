@@ -60,4 +60,9 @@ class LoginViewController: UIViewController {
             print("Error fetching users data!")
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! UsersViewController
+        destinationVC.currentUser = emailTextfield.text!
+    }
 }

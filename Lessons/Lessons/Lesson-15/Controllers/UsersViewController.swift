@@ -10,12 +10,14 @@ import CoreData
 
 class UsersViewController: UITableViewController {
 
+    var currentUser = ""
     var users = [User]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(currentUser)
         self.loadUser()
     }
 
@@ -43,32 +45,22 @@ class UsersViewController: UITableViewController {
         
         if let indexPath = tableView.indexPathForSelectedRow {
             destinationVC.selectedUser = users[indexPath.row]
+            destinationVC.currentUser = currentUser
         }
     }
     
     //MARK: - Data manipulation methods
     
     func loadUser() {
-        
         let request: NSFetchRequest<User> = User.fetchRequest()
+        //let predicate = NSPredicate(format: "email != %@", currentUser)
+        //request.predicate = predicate
         
         do {
             users = try context.fetch(request)
         } catch {
             print("Error fetching users, \(error)")
         }
-        
         tableView.reloadData()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
