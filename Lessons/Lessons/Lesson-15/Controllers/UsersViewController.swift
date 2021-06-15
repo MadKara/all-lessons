@@ -37,6 +37,10 @@ class UsersViewController: UITableViewController {
     //MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        context.delete(users[indexPath.row])
+//        users.remove(at: indexPath.row)
+//
+//        saveUser()
         performSegue(withIdentifier: K.chatSegue, sender: self)
     }
     
@@ -53,14 +57,26 @@ class UsersViewController: UITableViewController {
     
     func loadUser() {
         let request: NSFetchRequest<User> = User.fetchRequest()
-        //let predicate = NSPredicate(format: "email != %@", currentUser)
-        //request.predicate = predicate
-        
         do {
-            users = try context.fetch(request)
+            //users = try context.fetch(request)
+            var allUsers = try context.fetch(request)
+            for user in allUsers {
+                if currentUser != user.value(forKey: "email") as? String {
+                    users.append(user)
+                }
+            }
         } catch {
             print("Error fetching users, \(error)")
         }
         tableView.reloadData()
+    }
+    
+    func saveUser() {
+        do {
+            try context.save()
+        } catch {
+            print("error")
+        }
+        self.tableView.reloadData()
     }
 }

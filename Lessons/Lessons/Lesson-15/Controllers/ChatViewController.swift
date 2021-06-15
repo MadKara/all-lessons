@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 import CoreData
 
 class ChatViewController: UIViewController {
@@ -17,9 +16,14 @@ class ChatViewController: UIViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var messagesCoreData = [Message]()
+    var messages = [Message]()
     
     var selectedUser: User?
+//    {
+//        didSet {
+//            loadChatMessages()
+//        }
+//    }
     var currentUser = ""
     
     override func viewDidLoad() {
@@ -36,16 +40,20 @@ class ChatViewController: UIViewController {
     
     func loadChatMessages() {
 
-        let request: NSFetchRequest<Message> = Message.fetchRequest()
-        let predicate = NSPredicate(format: "ANY parentUser.email == %@", currentUser)
+        let request: NSFetchRequest<Message> = NSFetchRequest(entityName: "Message")
 
-        request.predicate = predicate
-        request.returnsObjectsAsFaults = false
+        let predSelectedUser = NSPredicate(format: "parentUser.email MATCHES %@", selectedUser!.email!)
+        let predCurrentUser = NSPredicate(format: "parentUser.email MATCHES %@", currentUser)
+        let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predSelectedUser, predCurrentUser])
+        
+        request.predicate = compoundPredicate
+        
         do {
-            messagesCoreData = try context.fetch(request)
+            messages = try context.fetch(request)
         } catch {
             print("Error fetching messages, \(error)")
         }
+        print(messages)
 
         self.tableView.reloadData()
 //        DispatchQueue.main.async {
@@ -70,7 +78,9 @@ class ChatViewController: UIViewController {
         if let messageBody = messageTextfield.text {
             let newMessage = Message(context: self.context)
             newMessage.text = messageBody
-            self.messagesCoreData.append(newMessage)
+            newMessage.parentUser = self.selectedUser
+            self.messages.append(newMessage)
+            print(messages)
             self.saveMessages()
         }
         DispatchQueue.main.async {
@@ -79,32 +89,22 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
-        
-        do {
-            try Auth.auth().signOut()
-            
-            navigationController?.popToRootViewController(animated: true)
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-        
+        navigationController?.popToRootViewController(animated: true)
     }
-    
 }
 
 extension ChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messagesCoreData.count
+        return messages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let message = messagesCoreData[indexPath.row]
+        let message = messages[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
-    
-        let user = message.parentUser == selectedUser   // !!
+        let user = message.parentUser?.email == selectedUser?.email
         cell.configureCell(with: user, messageText: message.text!)
         
         return cell
